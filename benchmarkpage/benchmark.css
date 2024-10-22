@@ -1,0 +1,48 @@
+body {
+    background-image: url(/assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-width:max-content;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 150px;
+    padding: 2rem;
+    padding-left: 6rem;
+    padding-top: 3rem;
+}
+.countdown-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.countdown-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+#timer {
+    font-size: 30px;
+    font-weight: bold;
+}
+#seconds, #remaining {
+    font-size: 14px;
+}
+
+svg {
+    transform: rotate(-90deg); /* Ruota il cerchio per iniziare dall'alto */
+}
+
+.progress-ring__circle {
+    stroke-dasharray: 339.292; /* Perimetro del cerchio (2 * π * r) */
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+}
