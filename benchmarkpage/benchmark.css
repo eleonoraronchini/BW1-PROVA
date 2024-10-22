@@ -46,5 +46,13 @@ svg {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s linear;
 }
+button {
+    width: 200px;
+    height: 70px; 
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 8rem;
+}
+.button {
 
-
+}
