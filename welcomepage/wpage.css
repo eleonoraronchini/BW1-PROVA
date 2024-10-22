@@ -1,5 +1,48 @@
-body{
+body {
     background-image: url(/assets/bg.jpg);
-    background-size: 100% 150%;
-    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-width:max-content;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: white;
+    padding-left: 6rem;
+}
+.logo{
+    width: 150px;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+h2 {
+    font-size: 60px;
+    padding-top: 0;
+    margin: 0;
+    color: white;
+    font-family: Outfit;
+}
+h1{
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    padding-top: 2rem;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+h3{
+    font-size: 22px;
+    color: #D20094;
+}
+
+.button {
+    text-align: right;
+}
+#acceptButton {
+    width: 150px;
+    height: 50px;
+    background-color: #00FFFF;
+    font-family: Outfit;
+    font-weight: bold;
+    color:black;
+    font-size:16px;
 }
