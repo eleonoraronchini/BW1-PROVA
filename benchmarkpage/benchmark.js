@@ -162,7 +162,14 @@ const questions = [
   }
   getTtitle()
 
-  
+const currentQuestionIndex = 0;
+const score = 0;
+
+const loadQuestion = function () {
+  const currentQuestion = 
+}
+
+
 
 
 

@@ -6,6 +6,8 @@ body {
     max-width:max-content;
     margin: 0;
     padding-left: 2rem;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    width:auto ;
 }
 .logo{
     width: 150px;
@@ -26,7 +28,7 @@ body {
     position: absolute;
     text-align: center;
     color: white;
-    font-family: 'Arial', sans-serif;
+    font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 #timer {
@@ -45,5 +47,6 @@ svg {
     stroke-dasharray: 339.292; /* Perimetro del cerchio (2 * π * r) */
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s linear;
-}
+};
+
 
