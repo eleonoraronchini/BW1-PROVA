@@ -25,11 +25,17 @@ function setProgress(percent) {
   circle.style.strokeDashoffset = offset;
 }
 
+let interval;
+
 // Funzione countdown
 function startTimer() {
   const timerElement = document.getElementById("timer");
 
-  const interval = setInterval(() => {
+if (interval){
+  clearInterval(interval)
+}
+
+  interval = setInterval(() => {
     timeLeft--;
     timerElement.textContent = timeLeft;
 
@@ -44,8 +50,17 @@ function startTimer() {
   }, 1000);
 }
 
-startTimer();
+function resetTimer() {
+                                                                                    // Ferma il timer corrente
+  clearInterval(interval);
 
+                                                                                   // Resetta il tempo rimasto al valore iniziale
+  timeLeft = TOTAL_TIME;
+
+                                                                                  // Aggiorna il testo del timer e l'animazione di progresso
+  document.getElementById("timer").textContent = timeLeft;
+  setProgress(0);                                                                   // Resetta l'animazione di progresso a 0%
+}
 //--------------------------------------------------//
 
 /* const container = document.querySelector(".buttonContainer");
@@ -466,6 +481,7 @@ const onLoad = function () {
   container.appendChild(h3);
 
   risposte(randomIndex);
+  startTimer ();
 };
 
 const risposte = function (randomIndex) {
@@ -500,14 +516,18 @@ const risposte = function (randomIndex) {
       } else { score;
       }
       
-      setTimeout(onLoad,500);                                                 //AGGIUNGO TEMPO PRIMA DI RICARICARE LA PAGINA CON SETTIMEOUT//
+      setTimeout(onLoad,500);  
+      resetTimer ();                                         //AGGIUNGO TEMPO PRIMA DI RICARICARE LA PAGINA CON SETTIMEOUT//
+      startTimer();
+      if (numberOfQuestion === 10){
+        resetTimer
+      }
     });
   }
 };
 window.onload = onLoad;
 
 
-  
 
 
 
