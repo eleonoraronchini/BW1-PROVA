@@ -450,7 +450,7 @@ const onLoad = function () {
 
   if (usedQuestions.length === questions.length) {
     container.innerHTML = "Hai completato il quiz!";
-    return; // PULISCE LA CONTAINER DELLE DOMANDE//
+    return;                                                                                          // PULISCE LA CONTAINER DELLE DOMANDE//
   }
 
   let randomIndex;
@@ -487,6 +487,7 @@ const risposte = function (randomIndex) {
     button.style.borderRadius = "20px"
     button.style.backgroundColor = "transparent";
     button.style.color = "white";
+
   
     div.appendChild(button);
     button.addEventListener("click", function () {
