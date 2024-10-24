@@ -1,6 +1,7 @@
 // Imposta il timer
 const TOTAL_TIME = 60;
 let timeLeft = TOTAL_TIME;
+let interval;
 
 // Recupera gli elementi SVG
 const circle = document.querySelector(".progress-ring__circle");
@@ -29,7 +30,7 @@ function setProgress(percent) {
 function startTimer() {
   const timerElement = document.getElementById("timer");
 
-  const interval = setInterval(() => {
+    interval = setInterval(() => {
     timeLeft--;
     timerElement.textContent = timeLeft;
 
@@ -45,6 +46,20 @@ function startTimer() {
 }
 
 startTimer();
+
+function resetTimer() {
+  // Ferma il timer corrente
+  clearInterval(interval);
+
+  // Resetta il tempo rimasto al valore iniziale
+  timeLeft = TOTAL_TIME;
+
+  // Aggiorna il testo del timer e l'animazione di progresso
+  document.getElementById("timer").textContent = timeLeft;
+  setProgress(0);  // Resetta l'animazione di progresso a 0%
+
+  
+}
 
 //--------------------------------------------------//
 
@@ -499,7 +514,12 @@ const risposte = function (randomIndex) {
       } else { score;
       }
       
-      setTimeout(onLoad,500);                                                 //AGGIUNGO TEMPO PRIMA DI RICARICARE LA PAGINA CON SETTIMEOUT//
+      setTimeout(onLoad,500); 
+      resetTimer();
+      startTimer();  
+      if(numberOfQuestion==10){
+        resetTimer();
+      }                                              //AGGIUNGO TEMPO PRIMA DI RICARICARE LA PAGINA CON SETTIMEOUT//
     });
   }
 };
