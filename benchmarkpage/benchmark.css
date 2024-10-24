@@ -1,12 +1,13 @@
 body {
     background-image: url(/assets/bg.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    
+    margin:0;
+    padding: 0;
+    height: 100%;
     width: 100%;
-    height: 100vh;
     margin: 0;
-    padding-left: 2rem;
     font-family: Inter, Arial, Helvetica, sans-serif;
     text-align: center;
 
@@ -27,7 +28,7 @@ body {
 h3{
     color: white;
     font-family:outfit,Arial, Helvetica, sans-serif ;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 450;
 }
 .countdown-container {
@@ -70,7 +71,7 @@ svg {
 .endPage {
     color: white;
     text-align: center;
-    margin-top: 12rem;
+    margin-top: 7rem;
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 100px;

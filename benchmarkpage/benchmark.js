@@ -463,6 +463,7 @@ divEndPage.appendChild(h4);
 const onLoad = function () {
   const container = document.querySelector(".buttonContainer");
 
+
   if (usedQuestions.length === questions.length) {
     container.innerHTML = "Hai completato il quiz!";
     container.style.color = "white";
@@ -470,6 +471,27 @@ const onLoad = function () {
     container.style.fontSize = '3rem'
     container.style.color = '#00FFFF'
     container.style.textShadow = '0 0 .5em magenta'
+    
+    let buttonNextPage = document.createElement("button");
+    let divButton = document.querySelector(".endButton");
+    divButton.appendChild(buttonNextPage);
+    buttonNextPage.style.cursor = "pointer";
+    buttonNextPage.style.width = "350px";
+    buttonNextPage.style.height = "50px";
+    buttonNextPage.style.margin = "1rem";
+    buttonNextPage.style.borderRadius = "20px"
+    buttonNextPage.style.backgroundColor = "transparent";
+    buttonNextPage.style.color = "white";
+    buttonNextPage.style.fontSize = "1rem";
+    buttonNextPage.style.fontFamily ="Inter";
+    buttonNextPage.style.fontWeight = "500";
+    buttonNextPage.innerText = "Mostra i risultati"
+
+    buttonNextPage.addEventListener("click", function (){
+      window.location.href = "../resultpage/result.html"
+    })
+
+    
     return;                                                                                          // PULISCE LA CONTAINER DELLE DOMANDE//
   }
 

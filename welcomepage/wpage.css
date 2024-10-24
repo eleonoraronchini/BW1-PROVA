@@ -4,8 +4,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    
- 
+    width: 100%;
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: white;
     margin-top: 100px;
@@ -69,6 +68,7 @@ h3{
     margin-right: 5rem;
     padding-top: 45px;
     padding-left: 150px;
+
 }
 #acceptButton {
     width: 150px;
@@ -81,6 +81,7 @@ h3{
     margin-right: 4rem;
     box-shadow: 1px 1px 10px 1px #00FFFF, -1px -1px 10px 1px #00FFFF;
     border: transparent;
+    cursor: pointer;
 }
 .contenitore{
     padding-left: 20px;
