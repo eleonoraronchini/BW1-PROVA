@@ -43,16 +43,22 @@ main p{
     display: flex;
   justify-content: space-between;
 }
+#chartContainer {
+    width: 100%;
+    height: 100%;
+}
 .correct{
     float: left;
     margin-top: 200px;
     padding-left: 200px;
     margin-right: 50px;
+
 }
 .wrong{
     float: right;
     margin-right: 100px;
     margin-top: 200px;
+    
 }
 footer {
     margin-top: 300px;
@@ -78,13 +84,12 @@ canvas {
 }
 
 #chartContainer {
-    margin-left: 0;
     width: 200px;
     height: 200px;
     margin: 50px auto;
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
 
 }
 
