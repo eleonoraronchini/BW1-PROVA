@@ -1,0 +1,96 @@
+body{
+    background-image: url(/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    font-family: 'Inter';
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+}
+header img{
+    width: 15%;
+    height: 10%;
+    margin-top: 50px;
+    padding-left: 130px;
+    margin-bottom: 60px;
+}
+main{
+    text-align: center;
+    margin-top: 60px;
+}
+main h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 0.5;
+}
+/*----------------------------------------STELLE--------------------------------------------*/
+.ratings-wrapper{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ #ratings{
+    display: flex;
+    flex-direction: row-reverse;
+ }
+ #dimStella{
+      font-size: 40px;
+      padding: 10px;
+      color: #0B113B;
+ }
+ #ratings span{
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: color .2s, trasform .2s;
+    font-size: 80px;
+
+ }
+ #ratings span:hover{
+    transform: scale(1.5);
+    color: #00FFFF;
+ }
+ #ratings span:hover ~ span{
+    color: #00FFFF;
+ }
+ #ratings span[data-clicked]{
+    color: #00FFFF;
+ }
+ #ratings span[data-clicked] ~ span{
+    color: #00FFFF;
+ }
+ 	
+ /*---------------------------------------------------STELLE-------------------------------------------------*/
+.para{
+    font-family: 'Inter';
+    font-size: 2.5rem;
+}
+#tag{
+    width: 50%;
+    background-color: transparent;       
+    color: rgb(209, 209, 209);
+    font-size: 25px;
+    border-bottom-color: rgb(255, 0, 132);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    padding-left: 50px;
+}
+footer{
+    margin-top: 60px;
+    text-align: center;  
+}
+footer button{
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #00FFFF;
+    color: darkblue;
+    border: none;
+    box-shadow: 0 0 1em #00FFFF;
+}
