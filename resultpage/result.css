@@ -39,19 +39,23 @@ main p{
     font-size: x-large;
 }
 .contenitore{
-    overflow: hidden
+    
+    display: flex;
+  justify-content: space-between;
 }
 .correct{
     float: left;
     margin-top: 200px;
-    padding-left: 400px;
+    padding-left: 200px;
+    margin-right: 50px;
 }
 .wrong{
     float: right;
-    margin-right: 400px;
+    margin-right: 100px;
     margin-top: 200px;
 }
 footer {
+    margin-top: 300px;
     margin-bottom:2rem;
 }
 button{
@@ -74,10 +78,13 @@ canvas {
 }
 
 #chartContainer {
+    margin-left: 0;
     width: 200px;
     height: 200px;
     margin: 50px auto;
     position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 
