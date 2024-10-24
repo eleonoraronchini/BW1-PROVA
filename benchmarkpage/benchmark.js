@@ -465,6 +465,11 @@ const onLoad = function () {
 
   if (usedQuestions.length === questions.length) {
     container.innerHTML = "Hai completato il quiz!";
+    container.style.color = "white";
+    container.style.fontWeight = 700
+    container.style.fontSize = '3rem'
+    container.style.color = '#00FFFF'
+    container.style.textShadow = '0 0 .5em magenta'
     return;                                                                                          // PULISCE LA CONTAINER DELLE DOMANDE//
   }
 
@@ -497,12 +502,15 @@ const risposte = function (randomIndex) {
     let button = document.createElement("button");
     button.innerText = shuffledAnswers[i];
     button.style.cursor = "pointer";
-    button.style.width = "150px";
+    button.style.width = "350px";
     button.style.height = "50px";
     button.style.margin = "1rem";
     button.style.borderRadius = "20px"
     button.style.backgroundColor = "transparent";
     button.style.color = "white";
+    button.style.fontSize = "1rem";
+    button.style.fontFamily ="Inter";
+    button.style.fontWeight = "500";
 
   
     div.appendChild(button);
@@ -520,7 +528,7 @@ const risposte = function (randomIndex) {
       resetTimer ();                                         //AGGIUNGO TEMPO PRIMA DI RICARICARE LA PAGINA CON SETTIMEOUT//
       startTimer();
       if (numberOfQuestion === 10){
-        resetTimer
+        resetTimer ();
       }
     });
   }
