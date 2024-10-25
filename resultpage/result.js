@@ -1,8 +1,8 @@
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const numDomande = 10;
-const corrette = 6;
-const sbagliate = 4;
+const corrette = localStorage.getItem("score");
+const sbagliate = numDomande - corrette;
 
 function calcolaPercentuale (num1, num2){
 let result = num1 * num2;
