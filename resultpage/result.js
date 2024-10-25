@@ -40,6 +40,11 @@ return result;
         button.addEventListener("click", function (){
             window.location.href ="../feedbackpage/index (2)(1).html"
         })
+        const button2 = document.querySelector(".Results");
+        button2.addEventListener("click", function  () {
+            window.location.href = "../answersheetpage/answer.html"
+        })
+        
 
         const correct = document.getElementById("correctPerc")
         const wrong = document.getElementById("wrongPerc")

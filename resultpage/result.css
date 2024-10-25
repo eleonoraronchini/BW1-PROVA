@@ -82,6 +82,9 @@ canvas {
     width: 100%;
     height: 100%;
 }
+.Results {
+    margin: 2rem;
+}
 
 #chartContainer {
     width: 200px;
