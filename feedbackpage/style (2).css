@@ -94,3 +94,30 @@ footer button{
     border: none;
     box-shadow: 0 0 1em #00FFFF;
 }
+
+#star-rating {
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .star {
+    color: #1a1a1a; /* Colore stelle non selezionate (scuro come nel tuo esempio) */
+    transition: color 0.3s ease; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+    font-size: 70px;
+   
+  }
+  
+  .star.selected,
+  .star.hovered,
+  .star:hover {
+    color: #00eaff; 
+    text-shadow: 0 0 1em #00FFFF;
+  }
+
+  #rating-value {
+    text-shadow: 0 0 1em #00FFFF;
+  }

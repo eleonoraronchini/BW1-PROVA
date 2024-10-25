@@ -21,19 +21,22 @@
         <p>From 0 to 10, how likeyly are you to recommend EPICODE <br>  to a friend or a colleague?</p>
         <br>
         <div class="ratings-wrapper">
-            <div id ="ratings">
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span> <p id="sostituto"></p>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-               <span id="dimStella">★</span>
-            </div>
+            <div id="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+                <span class="star" data-value="6">★</span>
+                <span class="star" data-value="7">★</span>
+                <span class="star" data-value="8">★</span>
+                <span class="star" data-value="9">★</span>
+                <span class="star" data-value="10">★</span>
+              </div>
+              
          </div>
+
+         <p id="rating-value"></p>
         <br>
         <br>
         <p class="para">Leave us an open feedback on your experience so far</p>
@@ -46,6 +49,7 @@
         <button id="btn">INVIA</button>
         <p id="comment"></p>
     </footer>
+   
     <script src="index.js"></script>
 </body>
 </html>
