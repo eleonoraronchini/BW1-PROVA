@@ -2,21 +2,33 @@ body {
     background-image: url(/assets/bg.jpg);
     background-size:cover;
     background-position: center;
-    margin: 0;
-    padding: 0;
+    background-repeat: no-repeat;
+
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
-    width: 100%;
-    height: 50%;
+    display: flex;
+    height: 100vh;
     background-repeat: no-repeat;
+    justify-content: center;
 }
-    .logo{
-        width: 150px;
-        padding-left: 4rem;
-        padding-top: 3rem;
-        display: flex;
+.contenitore-padre{
+    width: 80%;
 }
+
+.logo{
+    width: 200px;
+    display: flex;
+
+
+
+}
+.logo-box{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 250px;
+}
+
 h2 {
     font-size: 40px;
     padding-top: 0;
@@ -31,17 +43,21 @@ h1{
     font-family: Outfit, Arial, Helvetica, sans-serif;
 
 }
-main div h1{
-    margin-bottom: 0px;
-}
+
 main p{
-    margin-top: 0px;
+   
     font-size: x-large;
 }
+
 .contenitore{
     
     display: flex;
-  justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 250px;
+}
+.contenitore-figlio{
+    width: 80%;
 }
 #chartContainer {
     width: 100%;
@@ -49,28 +65,22 @@ main p{
 }
 .correct{
     float: left;
-    margin-top: 200px;
     padding-left: 200px;
-    margin-right: 50px;
 
 }
 .wrong{
     float: right;
-    margin-right: 100px;
-    margin-top: 200px;
+    
     
 }
-footer {
-    margin-top: 300px;
-    margin-bottom:2rem;
-}
+
 button{
     background-color: transparent;
     border: 1px solid white;
     font-size: 20px;
     text-transform: uppercase;
     padding: 15px 60px;
-    margin-bottom: 8rem;
+    
     font-family: Outfit, Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
@@ -78,24 +88,26 @@ button{
   box-shadow: 1px 1px 2px 1px #00ffff, -1px -1px 2px 1px #00ffff;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
-}
-.Results {
-    margin: 2rem;
-}
 
 #chartContainer {
     width: 200px;
     height: 200px;
     margin: 50px auto;
-    position: relative;
-    margin-left: 0.5rem;
-    margin-right: 1rem;
+    padding-right: 100px;
+    
 
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-left: 100px;
+}
+.paragraph{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
 .centered-text {
     position: absolute;
     top: -50px;

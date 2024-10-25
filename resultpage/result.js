@@ -54,7 +54,7 @@ return result;
 
         const paragraph = function (){ 
             const messageResult = document.querySelector (".paragraph")
-            messageResult.style.fontSize = "30px";
+            messageResult.style.fontSize = "40px";
             messageResult.style.fontFamily = "Outfit";
             if (corrette > sbagliate ) { 
                 messageResult.innerText = "Congratulations! You passed the exame. \nWe'll send you the certificate in few minutes.  \nCheck your email (including promotions/ spam folder)."
