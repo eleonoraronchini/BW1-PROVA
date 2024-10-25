@@ -55,7 +55,7 @@ main p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 550px;
+    padding-left: 100px;
 }
 .contenitore-figlio{
     width: 80%;
