@@ -102,6 +102,7 @@ input[type="checkbox"]:checked::after {
     left: 2.2%;
     
     color: #fdfdfd;
+    cursor:pointer;
 
 
 }
@@ -112,6 +113,7 @@ align-items: center;
 justify-content: space-between;
 width: 800px;
 padding-top: 30px;
+
 
 }
 .contenitore-figlio{

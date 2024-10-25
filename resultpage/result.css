@@ -65,15 +65,24 @@ main p{
 }
 .correct{
     float: left;
-    padding-left: 200px;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 50px;
 
 }
 .wrong{
     float: right;
-    
+    margin-right: 500px;
+    margin-top: 200px;
     
 }
-
+.paragraph {
+    margin-top: 6rem;
+}
+footer {
+    margin-top: 100px;
+    margin-bottom:2rem;
+}
 button{
     background-color: transparent;
     border: 1px solid white;
@@ -86,6 +95,7 @@ button{
     font-weight: bold;
     border-color: #00ffff;
   box-shadow: 1px 1px 2px 1px #00ffff, -1px -1px 2px 1px #00ffff;
+  cursor: pointer;
 }
 
 
