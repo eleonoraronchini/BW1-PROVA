@@ -1,5 +1,6 @@
 const checkbox = document.getElementById("firstCheckbox");
 const button = document.getElementById ("acceptButton");
+const icon =document.getElementById("icon")
 
 button.addEventListener ("click", function (){
     if (checkbox.checked == true){
@@ -8,3 +9,7 @@ button.addEventListener ("click", function (){
         alert("Accept the conditions")
     }
 });
+
+
+
+
