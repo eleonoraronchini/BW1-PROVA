@@ -337,6 +337,8 @@ const questions = [
 
 
 
+
+
 const arrayQuestions = []; /*ARRAY CON DOMANDE*/
 const question = function (array) {
   for (let i = 0; i < array.length; i++) {
@@ -551,6 +553,7 @@ const risposte = function (randomIndex) {
       startTimer();
       if (numberOfQuestion === 10){
         resetTimer ();
+        localStorage.setItem("score", score);
       }
     });
   }
