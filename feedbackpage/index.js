@@ -50,3 +50,17 @@ function setRating(event) {
   });
 }
 
+const inputBtn = document.getElementById('tag')
+ btn.addEventListener('click', function(){
+    if(inputBtn.value != 0){
+         inputBtn.remove() 
+         btn.remove()
+         let comm = document.createComment('helooo')
+         document.body.appendChild(comm)
+         let pComm = document.getElementById('comment')
+         pComm.innerHTML = "La tua opinione è importante, grazie per il tuo contributo"
+         pComm.style.fontFamily = 'Inter'
+         pComm.style.fontWeight = '700'
+         pComm.style.fontSize  = '1.5rem'
+    };
+ })
