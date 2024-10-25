@@ -4,34 +4,36 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100%;
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: white;
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
     
     
 }
-header{
-    margin-left: 250px;
+.contenitore-padre{
+    width: 80%;
+    padding-top: 50px;
+
+
 }
-section{
-    margin-left: 300px;
-    margin-top: 50px;
-}
-main{
-    margin-left: 300px;
-}
+
+
+
 footer{
-    margin-left: 300px;
+    
     display: flex;
 }
 
 .logo{
     width: 150px;
-    padding: 2rem;
-    padding-top: 3rem;
 
 
+
+}
+.logo-box{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 h2 {
     font-size: 80px;
@@ -62,14 +64,6 @@ h3{
     padding-bottom: 50px;
     line-height: 1.2;
 }
-
-.button {
-    text-align: right;
-    margin-right: 5rem;
-    padding-top: 45px;
-    padding-left: 150px;
-
-}
 #acceptButton {
     width: 150px;
     height: 50px;
@@ -78,7 +72,7 @@ h3{
     font-weight: bold;
     color:black;
     font-size:16px;
-    margin-right: 4rem;
+   
     box-shadow: 1px 1px 10px 1px #00FFFF, -1px -1px 10px 1px #00FFFF;
     border: transparent;
     cursor: pointer;
@@ -90,26 +84,59 @@ li{
     margin-bottom: 15px;
 }
 #firstCheckbox {
-    margin-top: 4rem;
+   
     appearance: none;
     width: 20px; 
   height: 20px;
     border: solid 2px white;
     background-color: transparent;
-    padding-top: 4px;
-    display: flex;
+    margin-right:  10px;
+    
+   
     
 }
-.checkbox{
-    padding-top: 100px;
+input[type="checkbox"]:checked::after {
+    content:"✓";
+    position: absolute;
+    top: 9%;
+    left: 2.2%;
+    
+    color: #fdfdfd;
+    cursor:pointer;
+
+
+}
+.check-contenitore{
+    
+    display: flex;
+align-items: center;
+justify-content: space-between;
+width: 800px;
+padding-top: 30px;
+
+
+}
+.contenitore-figlio{
+    display: flex;
+    position: relative;
+    
+
 }
 .scritta{
-    padding-top: 65px;
-    padding-left: 5px;
-    font-weight: bold;
+    padding-top: 5px;
 }
+#icon {
+    
+        display: none;
+        position: relative;
+        color: #d20094;
+        margin-left: 5px;
+        margin-bottom: 100px;
+    
+  }
+
+
 strong{
     font-weight: bold;
 
 }
-
