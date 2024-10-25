@@ -32,16 +32,10 @@ const inputBtn = document.getElementById('tag')
             pSos.style.fontSize = '3rem'
             pSos.style.color = '#00FFFF'
             pSos.style.textShadow = '0 0 .5em magenta'
-            if(element.length)
-          pSos.innerHTML = 'Grazie per la tua recensione!'
-            /* if(element.length < 6 ){ //se recensione positiva, pSos inner.HTML = positivo, senno...
-                
-            }/*else if(element.length >= 6){
-                pSos.innerHTML = 'Grazie per la recensione positiva!'
-            }*/
-           
             
+            pSos.innerHTML = "Grazie per la tua recensione!"
+   
          } dimStella.remove()
    
     });
-});
+}); 
